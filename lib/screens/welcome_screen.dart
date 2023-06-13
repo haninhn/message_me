@@ -22,7 +22,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
              buildAppLogo(),
              const SizedBox(height: 30),
              buildSignInBtn(),
-             const SizedBox(height: 30),
+             const SizedBox(height: 20),
              buildSignUpBtn(),
           ],))
     ));
@@ -34,7 +34,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
              child: Image.asset("assets/images/message-me.jpeg"),
          );
   }
-
   Button buildSignInBtn() {
     return Button(color:  Colors.pinkAccent[100]!,btnTitle: "Sign in", onPressed: (){ print("pressed");});
   }
