@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/buttom.dart';
+
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
 
@@ -13,13 +15,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     return Scaffold(
         backgroundColor: Colors.white,
          body: Center(
-          child:   Padding(padding: const EdgeInsets.symmetric(vertical:  10),
+          child: Padding(padding: const EdgeInsets.symmetric(vertical:  10),
            child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            buildAppLogo(),
-             const SizedBox(height: 30,),
-            buildSignInbtn()
+             buildAppLogo(),
+             const SizedBox(height: 30),
+             buildSignInBtn(),
+             const SizedBox(height: 30),
+             buildSignUpBtn(),
           ],))
     ));
   }
@@ -31,18 +35,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
          );
   }
 
-  Material buildSignInbtn() {
-    return Material(
-            elevation: 5,
-            color: Colors.pinkAccent,
-            borderRadius: BorderRadius.circular(10),
-            child: MaterialButton(
-              onPressed: (){},
-              minWidth: 350,
-              height: 42,
-              child:  const Text('Sign in',
-                style: TextStyle(color : Colors.white) ,),
-            ),
-          );
+  Button buildSignInBtn() {
+    return Button(color:  Colors.pinkAccent[100]!,btnTitle: "Sign in", onPressed: (){ print("pressed");});
+  }
+  Button buildSignUpBtn() {
+    return Button(color:  Colors.pinkAccent[200]!,btnTitle: "Sign Up", onPressed: (){ print("pressed");});
   }
 }
