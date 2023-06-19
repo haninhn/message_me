@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:message_me/screens/chat_screen.dart';
+import 'package:message_me/screens/login_screen.dart';
+import 'package:message_me/screens/registration_screen.dart';
+import 'package:message_me/screens/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +19,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ChatScreen(),
+      //home: const ChatScreen(),
+      initialRoute: WelcomeScreen.screenRoute,
+      routes: {
+        WelcomeScreen.screenRoute:(context) => const WelcomeScreen(),
+        SignInScreen.screenRoute:(context) => const SignInScreen(),
+        RegistrationScreen.screenRoute:(context) => const RegistrationScreen(),
+        ChatScreen.screenRoute:(context) => const ChatScreen()
+      } ,
     );
   }
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1018401270338",
+    "project_id": "message-me-a0aa1",
+    "storage_bucket": "message-me-a0aa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018401270338:android:c31e615384488a47f6dbdb",
+        "android_client_info": {
+          "package_name": "com.hanine.message_me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018401270338-i5ptb6594rmoikkvkhbau691ula3477k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSIIv8AKbix_du5p0Mlrz-V5PR5HyHI7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018401270338-i5ptb6594rmoikkvkhbau691ula3477k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

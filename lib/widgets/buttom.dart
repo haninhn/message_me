@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Button extends StatelessWidget {
   final Color color;
   final String btnTitle;
-  final Function onPressed;
+  final VoidCallback onPressed; //  VoidCallback == void function
   const Button({Key? key, required this.color, required this.btnTitle, required this.onPressed}) : super(key: key);
 
   @override
@@ -13,7 +13,7 @@ class Button extends StatelessWidget {
       color: color,
       borderRadius: BorderRadius.circular(10),
       child: MaterialButton(
-        onPressed: ()=> onPressed,
+        onPressed: onPressed,
         minWidth: 350,
         height: 42,
         child:

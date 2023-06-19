@@ -29,6 +29,7 @@ flutter:
   assets:
     - assets/images/message-me.jpeg
     - assets/images/backgroundImg.jpg
+    - assets/images/message_me.png
 
 
   # fonts:

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-
+import 'package:message_me/screens/login_screen.dart';
+import 'package:message_me/screens/registration_screen.dart';
 import '../widgets/buttom.dart';
 
 class WelcomeScreen extends StatefulWidget {
-  const WelcomeScreen({Key? key}) : super(key: key);
+  static String screenRoute = "welcome_screen";
 
+  const WelcomeScreen({Key? key}) : super(key: key);
   @override
   State<WelcomeScreen> createState() => _WelcomeScreenState();
 }
@@ -35,9 +37,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
          );
   }
   Button buildSignInBtn() {
-    return Button(color:  Colors.pinkAccent[100]!,btnTitle: "Sign in", onPressed: (){ print("pressed");});
+    return Button(color:  Colors.pink[100]!,btnTitle: "Sign in", onPressed: (){Navigator.pushNamed(context, SignInScreen.screenRoute);  });
   }
   Button buildSignUpBtn() {
-    return Button(color:  Colors.pinkAccent[200]!,btnTitle: "Sign Up", onPressed: (){ print("pressed");});
+    return Button(color:  Colors.pink[400]!,btnTitle: "Register", onPressed: (){Navigator.pushNamed(context, RegistrationScreen.screenRoute); });
   }
 }

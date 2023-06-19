@@ -4,6 +4,8 @@ import '../widgets/buttom.dart';
 import '../widgets/textFieldWidget.dart';
 
 class RegistrationScreen extends StatefulWidget {
+  static String screenRoute = "registration_screen";
+
   const RegistrationScreen({Key? key}) : super(key: key);
 
   @override

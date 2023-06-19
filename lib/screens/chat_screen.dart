@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 class ChatScreen extends StatefulWidget {
+  static String screenRoute = "chat_screen";
+
   const ChatScreen({Key? key}) : super(key: key);
 
   @override
@@ -15,9 +17,9 @@ class _ChatScreenState extends State<ChatScreen> {
         backgroundColor: Colors.pink[200],
         title: Row(
           children: [
-            Image.asset('assets/images/message-me.jpeg', height: 25),
+            Image.asset('assets/images/message_me.png', height: 25),
             const SizedBox(width: 10),
-            Text('MessageMe')
+            const Text('MessageMe')
           ],
         ),
         actions: [
@@ -45,9 +47,10 @@ class _ChatScreenState extends State<ChatScreen> {
             Container(),
             Container(
               decoration:  BoxDecoration(
+                color: Colors.white,
                 border: Border(
                   top: BorderSide(
-                    color: Colors.pink[50]!,
+                    color: Colors.pink[600]!,
                     width: 2,
                   ),
                 ),
